@@ -3,8 +3,6 @@ import ProjectComponent from "../components/projectComponent/projectComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./main.css";
 import Menu from "../components/menu/menu";
-import { Location } from "@reach/router";
-import JSONData from "../../content/projectDetails.json";
 
 export default function Projects({ location }) {
   let projectName = getQueryVariable(location.search, "name");
@@ -27,7 +25,7 @@ export function getQueryVariable(query, variable) {
   var vars = query.split("&");
   for (var i = 0; i < vars.length; i++) {
     var pair = vars[i].split("=");
-    if (decodeURIComponent(pair[0]) == variable) {
+    if (decodeURIComponent(pair[0]) === variable) {
       return decodeURIComponent(pair[1]);
     }
   }
