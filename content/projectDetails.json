@@ -1,0 +1,14 @@
+[
+  {
+    "projectName": "project1",
+    "title": "Project DOG",
+    "shortDescription": "This is the first project that I've ever done",
+    "numberOfImages": 2
+  },
+  {
+    "projectName": "project2",
+    "title": "Project CAT",
+    "shortDescription": "Yay I love cats",
+    "numberOfImages": 2
+  }
+]

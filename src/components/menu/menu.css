@@ -1,0 +1,9 @@
+.selected a {
+    color: black !important;
+    font-weight: bold;
+}
+
+.selected {
+    color: black !important;
+    font-weight: bold;
+}
