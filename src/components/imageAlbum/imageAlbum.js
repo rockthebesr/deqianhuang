@@ -1,12 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "./imageAlbum.css";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from "react-device-detect";
 
 export default function ImageAlbum(props) {
   let imageFolderPath = "/";

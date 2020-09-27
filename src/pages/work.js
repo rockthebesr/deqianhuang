@@ -4,8 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./main.css";
 import Menu from "../components/menu/menu";
 
-export default function Projects({ location }) {
-  let projectName = getQueryVariable(location.search, "name");
+export default function Work({ location }) {
+  let name = getQueryVariable(location.search, "name");
   return (
     <div class="container">
       <div class="row">
@@ -13,7 +13,7 @@ export default function Projects({ location }) {
           <Menu location={location}></Menu>
         </div>
         <div className="col-lg-8 right-side">
-          <ProjectComponent projectName={projectName} />
+          <ProjectComponent name={name} />
         </div>
       </div>
     </div>

@@ -1,9 +1,31 @@
 .selected a {
-    color: black !important;
-    font-weight: bold;
+  color: black !important;
+  font-weight: bold;
 }
 
 .selected {
-    color: black !important;
-    font-weight: bold;
+  color: black !important;
+  font-weight: bold;
+}
+
+.modal-content {
+  border: none;
+  background-color: transparent;
+}
+
+.modal-open .modal {
+  background-color: white;
+}
+
+.fade {
+  transition-duration: 0.75s;
+  transition-timing-function: ease-in-and-out;
+}
+
+.fade.out {
+  transition-duration: 1s;
+  transition-timing-function: ease-in-and-out;
+}
+.modal-backdrop.show {
+    opacity: 0;
 }

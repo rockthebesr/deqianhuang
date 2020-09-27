@@ -1,27 +1,24 @@
 import React from "react";
 import ImageAlbum from "../imageAlbum/imageAlbum";
-import YAMLdata from "../../../content/project.yaml";
+import YAMLdata from "../../../content/work.yaml";
 import { find } from "lodash";
 import "./projectComponent.css";
 import ProjectDescriptionComponent from "../projectDescriptionComponent/projectDescriptionComponent";
 
-/* ATTENTION: You need to specify the following:
-    projectName: this is name of the project
-    projectDescription: a text decription of the project
-    imageFolder: the folder this project's related images reside in
-*/
 export default function ProjectComponent(props) {
-  let projectName = props.projectName;
-  let projectDetail = find(YAMLdata, { projectName: projectName });
+  let name = props.name;
+  let projectDetail = find(YAMLdata, { name: name });
   if (projectDetail) {
     return (
       <div>
         <div className="float-right">{projectDetail.shortDescription}</div>
         <ImageAlbum
-          imagePrefix={projectName}
+          imagePrefix={name}
           numberOfImages={projectDetail.numberOfImages}
         />
-        <ProjectDescriptionComponent projectDescrption={projectDetail.projectDescrption}></ProjectDescriptionComponent>
+        <ProjectDescriptionComponent
+          projectDescrption={projectDetail.descrption}
+        ></ProjectDescriptionComponent>
       </div>
     );
   }
