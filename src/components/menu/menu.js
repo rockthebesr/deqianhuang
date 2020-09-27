@@ -8,7 +8,7 @@ export default function Menu(props) {
   console.log(props.location);
   let projectName = getQueryVariable(props.location.search, "name");
   let projectButtons = JSONData.map((projectDetail) => {
-    let to = "/projects?name=" + projectDetail.projectName;
+    let to = "/projects/?name=" + projectDetail.projectName;
     let dom = (
       <div
         className={

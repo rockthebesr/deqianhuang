@@ -3,11 +3,11 @@ import Carousel from "react-bootstrap/Carousel";
 import "./imageAlbum.css";
 
 export default function ImageAlbum(props) {
-  let imageFolderPath = "/" + props.imagePrefix;
+  let imageFolderPath = "/";
   let imagePaths = [];
   for (let i = 1; i <= props.numberOfImages; i++) {
     imagePaths.push(
-      imageFolderPath + "/" + props.imagePrefix + "-" + i + ".jpg"
+      imageFolderPath + props.imagePrefix + "-" + i + ".jpg"
     );
   }
 
