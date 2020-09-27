@@ -7,6 +7,16 @@
 }
 
 .carousel .carousel-item img {
-  max-height: 500px;
-  min-width: auto;
+  height: 335.50px;
 }
+
+@media (min-width: 768px) {
+
+  .carousel .carousel-item img {
+    height: 547.50px
+  }
+}
+
+/* .carousel .carousel-item img {
+  padding-top: 75%
+} */

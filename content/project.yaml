@@ -1,0 +1,17 @@
+---
+- projectName: project1
+  title: Project DOG
+  shortDescription: 'Labrador | United States | 2020 '
+  projectDescrption: |
+    Well this is just an example of a project descrption. Well this is just an example of a project descrption.
+    Well this is just an example of a project descrption. Well this is just an example of a project descrption. Well this is just an example of a project descrption.
+    Well this is just an example of a project descrption. Well this is just an example of a project descrption. Well this is just an example of a project descrption.
+    Well this is just an example of a project descrption. Well this is just an example of a project descrption. Well this is just an example of a project descrption.
+    Well this is just an example of a project descrption. Well this is just an example of a project descrption. Well this is just an example of a project descrption.
+  numberOfImages: 2
+- projectName: project2
+  title: Project CAT
+  shortDescription: cats | canada | 2020
+  projectDescrption: |
+    Well this is just an example of a project descrption. Well this is just an example of a project descrption.
+  numberOfImages: 2

@@ -1,7 +1,9 @@
-import React from "react"
-import ImageAlbum from "../imageAlbum/imageAlbum"
-import JSONData from "../../../content/projectDetails.json"
-import { find } from "lodash"
+import React from "react";
+import ImageAlbum from "../imageAlbum/imageAlbum";
+import YAMLdata from "../../../content/project.yaml";
+import { find } from "lodash";
+import "./projectComponent.css";
+import ProjectDescriptionComponent from "../projectDescriptionComponent/projectDescriptionComponent";
 
 /* ATTENTION: You need to specify the following:
     projectName: this is name of the project
@@ -10,14 +12,18 @@ import { find } from "lodash"
 */
 export default function ProjectComponent(props) {
   let projectName = props.projectName;
-  let projectDetail = find(JSONData, {'projectName': projectName});
+  let projectDetail = find(YAMLdata, { projectName: projectName });
   if (projectDetail) {
     return (
       <div>
-        <p>{projectDetail.shortDescription}</p>
-        <ImageAlbum imagePrefix={projectName} numberOfImages={projectDetail.numberOfImages}/>
+        <div className="float-right">{projectDetail.shortDescription}</div>
+        <ImageAlbum
+          imagePrefix={projectName}
+          numberOfImages={projectDetail.numberOfImages}
+        />
+        <ProjectDescriptionComponent projectDescrption={projectDetail.projectDescrption}></ProjectDescriptionComponent>
       </div>
-    )
-  } 
+    );
+  }
   return "";
 }
