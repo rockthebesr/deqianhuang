@@ -11,10 +11,13 @@ import { find } from "lodash"
 export default function ProjectComponent(props) {
   let projectName = props.projectName;
   let projectDetail = find(JSONData, {'projectName': projectName});
-  return (
-    <div>
-      <p>{projectDetail.shortDescription}</p>
-      <ImageAlbum imagePrefix={projectName} numberOfImages={projectDetail.numberOfImages}/>
-    </div>
-  )
+  if (projectDetail) {
+    return (
+      <div>
+        <p>{projectDetail.shortDescription}</p>
+        <ImageAlbum imagePrefix={projectName} numberOfImages={projectDetail.numberOfImages}/>
+      </div>
+    )
+  } 
+  return "";
 }
