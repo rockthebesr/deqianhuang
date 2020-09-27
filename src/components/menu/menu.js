@@ -5,7 +5,6 @@ import { getQueryVariable } from "../../pages/projects";
 import "./menu.css";
 
 export default function Menu(props) {
-    console.log(YAMLData)
   let projectName = getQueryVariable(props.location.search, "name");
   let projectButtons = YAMLData.map((projectDetail) => {
     let to = "/projects/?name=" + projectDetail.projectName;

@@ -1,0 +1,18 @@
+.readMoreButton {
+  border: none;
+  background-color: white;
+  color: #87888a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.readMoreButton:hover {
+  color: black !important;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.projectDescriptionText {
+  max-height: 150px;
+  overflow-y: auto;
+}

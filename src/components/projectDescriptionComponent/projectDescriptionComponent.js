@@ -13,19 +13,29 @@ export default class ProjectDescriptionComponent extends React.Component {
     }));
   }
 
+  componentDidUpdate(prevProps) {
+    if (this.props.projectDescrption !== prevProps.projectDescrption) {
+      this.setState((state) => ({
+        isToggleOn: false,
+      }));
+    }
+  }
+
   render() {
     let projectDescrption = this.props.projectDescrption;
     if (projectDescrption) {
       return (
         <div className="row">
-          <button
-            className="col-12 readMoreButton float-right"
+          <div
+            className="col-12 readMoreButton text-right mt-3"
             onClick={() => this.handleClick()}
           >
-            read more
-          </button>
+            {!this.state.isToggleOn ? "read more" : "hide"}
+          </div>
           {this.state.isToggleOn && (
-            <div className="projectDescriptionText col-12">{projectDescrption}</div>
+            <div className="projectDescriptionText col-12 mt-2">
+              {projectDescrption}
+            </div>
           )}
         </div>
       );
