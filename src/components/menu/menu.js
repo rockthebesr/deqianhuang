@@ -57,7 +57,7 @@ export default class Menu extends React.Component {
       return (
         <div
           className={
-            "col-2 text-mobile text-md-left " + (selected ? "selected" : "")
+            "col-2 text-mobile text-md-right " + (selected ? "selected" : "")
           }
         >
           <Link to={"/" + menuName + "/"}>{menuName}</Link>
