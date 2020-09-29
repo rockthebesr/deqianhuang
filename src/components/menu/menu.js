@@ -1,35 +1,32 @@
 import React from "react";
 import { Link } from "gatsby";
-import YAMLData from "../../../content/work.yaml";
-import { getQueryVariable } from "../../pages/work";
 import "./menu.css";
 import Modal from "react-bootstrap/Modal";
+import {
+  getImageDir,
+  WORK,
+  WORK_NAME,
+  NEWS,
+  NEWS_NAME,
+  INFO,
+  CONTACT,
+  PROFILE,
+  computeWorkUrl,
+  returnInfoPageTypeIfOnInfoPage,
+  returnWorkNameIfOnWorkPage,
+  returnNewsNameIfOnNewsPage,
+} from "../../util/util";
 
 export default class Menu extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isModalOpen: !localStorage.isModalOpen,
+      isModalOpen:
+        typeof window !== "undefined" ? !localStorage.isModalOpen : false,
     };
   }
 
   render() {
-    let name = getQueryVariable(this.props.location.search, "name");
-    let projectButtons = YAMLData.map((projectDetail) => {
-      let to = "/work/?name=" + projectDetail.name;
-      let dom = (
-        <div
-          className={
-            "col-4 col-sm-4 col-md-12 col-lg-12 " +
-            (projectDetail.name == name ? "selected" : "")
-          }
-        >
-          <Link to={to}>{projectDetail.title}</Link>
-        </div>
-      );
-      return dom;
-    });
-
     setTimeout(
       function () {
         localStorage.isModalOpen = true;
@@ -42,21 +39,31 @@ export default class Menu extends React.Component {
       <div class="row justify-content-center">
         <Modal show={this.state.isModalOpen}>
           <Modal.Body>
-            <img src="/logo.jpg" className="w-100"></img>
+            <img src={getImageDir() + "/logo.jpg"} className="w-100"></img>
           </Modal.Body>
         </Modal>
-        <div className="col-12 d-flex justify-content-center justify-content-md-start mb-3">
-          <Link to="/" activeClassName="selected">
-            Oaid Studio
-          </Link>
+        <div className="col-12 text-mobile text-md-left">
+          <Link to="/">Oaid Studio</Link>
         </div>
-        <div className="col-12 d-flex justify-content-center justify-content-md-start mb-3">
-          <Link to="/info/" activeClassName="selected">
-            Info
-          </Link>
-        </div>
-        {projectButtons}
+        {this.createMenuButtons(this.props.location)}
       </div>
     );
+  }
+
+  createMenuButtons(location) {
+    let menuButtonNamesList = [INFO, WORK, NEWS];
+    let menuButtons = menuButtonNamesList.map((menuName) => {
+      let selected = location.pathname.indexOf(menuName) >= 0;
+      return (
+        <div
+          className={
+            "col-12 text-mobile text-md-left " + (selected ? "selected" : "")
+          }
+        >
+          <Link to={"/" + menuName + "/"}>{menuName}</Link>
+        </div>
+      );
+    });
+    return <div>{menuButtons}</div>;
   }
 }

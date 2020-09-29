@@ -1,16 +1,16 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "./imageAlbum.css";
+import { getImageDir } from "../../util/util";
 
 export default function ImageAlbum(props) {
-  let imageFolderPath = "/";
   let imagePaths = [];
   for (let i = 1; i <= props.numberOfImages; i++) {
-    imagePaths.push(imageFolderPath + props.imagePrefix + "-" + i + ".jpg");
+    imagePaths.push(getImageDir() + props.imagePrefix + "-" + i + ".jpg");
   }
 
   let imageAlbum = (
-    <div className="imageAlbum" onContextMenu={(e) => e.preventDefault()} >
+    <div className="imageAlbum" onContextMenu={(e) => e.preventDefault()}>
       <Carousel
         controls={true}
         interval={null}

@@ -8,12 +8,14 @@
 
 .carousel .carousel-item img {
   height: 300.50px;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
 
   .carousel .carousel-item img {
-    height: 547.50px
+    height: 547.50px;
+    object-fit: cover;
   }
 }
 

@@ -1,19 +1,19 @@
 body {
   font-family: "Helvetica";
-  font-size: 16px;
+  font-size: 12pt;
   text-transform: uppercase;
   margin-top: 5%;
 }
 
 body a {
-  color: #87888a;
+  color: black;
   font-weight: bold;
-  line-height: 10px;
+  line-height: 16pt;
 }
 
 @media (max-width: 768px) {
   body a {
-    color: #87888a;
+    color: black;
     font-weight: bold;
     line-height: 5px;
   }

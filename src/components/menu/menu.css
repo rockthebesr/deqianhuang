@@ -1,12 +1,8 @@
 .selected a {
-  color: black !important;
-  font-weight: bold;
+  /* color: black !important; */
+  text-decoration: underline;
 }
 
-.selected {
-  color: black !important;
-  font-weight: bold;
-}
 
 .modal-content {
   border: none;
@@ -27,5 +23,5 @@
   transition-timing-function: ease-in-and-out;
 }
 .modal-backdrop.show {
-    opacity: 0;
+  opacity: 0;
 }
