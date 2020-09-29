@@ -42,7 +42,7 @@ export default class Menu extends React.Component {
             <img src={getImageDir() + "/logo.jpg"} className="w-100"></img>
           </Modal.Body>
         </Modal>
-        <div className="col-12 text-mobile text-md-left">
+        <div className="col-6 text-mobile text-md-left">
           <Link to="/">Oaid Studio</Link>
         </div>
         {this.createMenuButtons(this.props.location)}
@@ -57,13 +57,13 @@ export default class Menu extends React.Component {
       return (
         <div
           className={
-            "col-12 text-mobile text-md-left " + (selected ? "selected" : "")
+            "col-2 text-mobile text-md-left " + (selected ? "selected" : "")
           }
         >
           <Link to={"/" + menuName + "/"}>{menuName}</Link>
         </div>
       );
     });
-    return <div>{menuButtons}</div>;
+    return <React.Fragment>{menuButtons}</React.Fragment>;
   }
 }

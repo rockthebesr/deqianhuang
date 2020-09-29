@@ -14,10 +14,8 @@ export default class Layout extends React.Component {
   render() {
     return (
       <div class="container">
-        <div class="row">
-          <Menu location={this.props.location}></Menu>
-        </div>
-        <div class="row">
+        <Menu location={this.props.location}></Menu>
+        <div class="row mt-5">
           <div class="col-lg-4 left-side">
             <Submenu location={this.props.location}></Submenu>
           </div>
