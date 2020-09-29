@@ -1,13 +1,13 @@
 import React from "react";
 import ImageAlbum from "../imageAlbum/imageAlbum";
-import YAMLdata from "../../../content/work.yaml";
+import workYaml from "../../../content/work.yaml";
 import { find } from "lodash";
 import "./projectComponent.css";
 import ProjectDescriptionComponent from "../projectDescriptionComponent/projectDescriptionComponent";
 
 export default function ProjectComponent(props) {
   let name = props.name;
-  let projectDetail = find(YAMLdata, { name: name });
+  let projectDetail = find(workYaml, { name: name });
   if (projectDetail) {
     return (
       <div>

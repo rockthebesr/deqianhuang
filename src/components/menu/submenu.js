@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import YAMLData from "../../../content/work.yaml";
+import workYaml from "../../../content/work.yaml";
 import { getQueryVariable } from "../../util/util";
 import "./menu.css";
 import Modal from "react-bootstrap/Modal";
@@ -14,9 +14,11 @@ import {
   CONTACT,
   PROFILE,
   computeWorkUrl,
+  isOnInfoPage,
   returnInfoPageTypeIfOnInfoPage,
   returnWorkNameIfOnWorkPage,
   returnNewsNameIfOnNewsPage,
+  computeInfoUrl,
 } from "../../util/util";
 
 export default class Submenu extends React.Component {
@@ -26,35 +28,38 @@ export default class Submenu extends React.Component {
 
   render() {
     let location = this.props.location;
-    if (returnInfoPageTypeIfOnInfoPage(location) != null) {
-      return this.renderInfoMenu();
+
+    if (isOnInfoPage(location)) {
+      return this.renderInfoMenu(returnInfoPageTypeIfOnInfoPage(location));
     } else if (returnWorkNameIfOnWorkPage(location) != null) {
-      console.log(location);
       return this.renderWorkMenu(returnWorkNameIfOnWorkPage(location));
     } else if (returnNewsNameIfOnNewsPage(location) != null) {
       return this.renderNewsMenu();
     }
 
-    return ""
-  }
-
-  getSubMenus(location) {
-    if (returnInfoPageTypeIfOnInfoPage(location) != null) {
-      return this.renderInfoMenu();
-    } else if (returnWorkNameIfOnWorkPage(location) != null) {
-      console.log(location);
-      return this.renderWorkMenu(returnWorkNameIfOnWorkPage(location));
-    } else if (returnNewsNameIfOnNewsPage(location) != null) {
-      return this.renderNewsMenu();
-    }
-  }
-
-  renderInfoMenu(infoName) {
     return "";
   }
 
+  renderInfoMenu(selectedType) {
+    let infoNames = [PROFILE, CONTACT];
+    return infoNames.map((infoName) => {
+      let to = computeInfoUrl(infoName);
+      let dom = (
+        <div
+          className={
+            "col-4 col-sm-4 col-md-12 col-lg-12 " +
+            (selectedType == infoName ? "selected" : "")
+          }
+        >
+          <Link to={to}>{infoName}</Link>
+        </div>
+      );
+      return dom;
+    });
+  }
+
   renderWorkMenu(workName) {
-    return YAMLData.map((projectDetail) => {
+    return workYaml.map((projectDetail) => {
       let to = computeWorkUrl(projectDetail.name);
       let dom = (
         <div

@@ -34,17 +34,17 @@ export function returnWorkNameIfOnWorkPage(location) {
   }
 }
 
+export function isOnInfoPage(location) {
+  return location.pathname.indexOf(INFO) >= 0;
+}
+
 export function returnInfoPageTypeIfOnInfoPage(location) {
-  if (location.pathname.indexOf(INFO) >= 0) {
-    let search = location.search;
-    if (!!search) {
-      return null;
-    } else {
-      search = search.substring(1);
-    }
-    return search;
-  } else {
+  let search = location.search;
+  if (!search) {
     return null;
+  } else {
+    search = search.substring(1);
+    return search;
   }
 }
 
@@ -57,5 +57,8 @@ export function returnNewsNameIfOnNewsPage(location) {
 }
 
 export function computeWorkUrl(workname) {
-  return "/" + WORK + "?" + WORK_NAME + "=" + workname;
+  return "/" + WORK + "/" + "?" + WORK_NAME + "=" + workname;
+}
+export function computeInfoUrl(infoName) {
+  return "/" + INFO + "/" + "?" + infoName;
 }
