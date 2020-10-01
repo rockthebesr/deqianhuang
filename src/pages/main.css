@@ -18,18 +18,14 @@ body a {
     line-height: 5px;
   }
 
-  
   body {
-    font-size: 12px;
+    font-size: 10pt;
   }
 }
 
 body a:hover {
   color: black !important;
-  font-weight: bold;
-  text-decoration: none;
 }
-
 
 .right-side {
   overflow-y: auto;

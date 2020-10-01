@@ -1,6 +1,7 @@
 import React from "react";
 import Menu from "../menu/menu";
 import Submenu from "../menu/submenu";
+import { Helmet } from "react-helmet";
 
 export default class Layout extends React.Component {
   constructor(props) {
@@ -14,6 +15,11 @@ export default class Layout extends React.Component {
   render() {
     return (
       <div class="container">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>OAID Studio | 一德</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
         <Menu location={this.props.location}></Menu>
         <div class="row mt-5">
           <div class="col-lg-4 left-side">
