@@ -9,5 +9,5 @@ import workYaml from "../../content/work.yaml";
 //{ location }
 export default function Home({ location }) {
   navigate(computeWorkUrl(workYaml[0].name));
-  return <Layout location={location}></Layout>;
+  return "";
 }

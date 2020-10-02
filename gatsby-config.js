@@ -9,5 +9,14 @@ const path = require(`path`);
 module.exports = {
   /* Your site config here */
   pathPrefix: "/deqianhuang",
-  plugins: [`gatsby-plugin-lodash`, `gatsby-plugin-react-helmet`],
+  plugins: [
+    `gatsby-plugin-lodash`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/layout/layout`),
+      },
+    },
+  ],
 };

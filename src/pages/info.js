@@ -15,7 +15,7 @@ export default function Info({ location }) {
   }
   console.log(renderedText);
   return (
-    <Layout location={location}>
+    <React.Fragment>
       {renderedText.split("\n").map((i, key) => {
         return (
           <React.Fragment>
@@ -24,6 +24,6 @@ export default function Info({ location }) {
           </React.Fragment>
         );
       })}
-    </Layout>
+    </React.Fragment>
   );
 }

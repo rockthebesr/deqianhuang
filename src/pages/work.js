@@ -8,9 +8,5 @@ import { returnWorkNameIfOnWorkPage } from "../util/util";
 export default function Work({ location }) {
   let name = returnWorkNameIfOnWorkPage(location);
   console.log(name);
-  return (
-    <Layout location={location}>
-      <ProjectComponent name={name} />
-    </Layout>
-  );
+  return <ProjectComponent name={name} />;
 }

@@ -8,7 +8,7 @@ body {
 body a {
   color: black;
   font-weight: bold;
-  line-height: 16pt;
+  line-height: 25pt;
 }
 
 @media (max-width: 768px) {

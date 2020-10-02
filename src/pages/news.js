@@ -7,6 +7,6 @@ import Layout from "../components/layout/layout";
 
 //{ location }
 export default function News({ location }) {
-  return <Layout location={location}></Layout>;
+  return "";
 }
 

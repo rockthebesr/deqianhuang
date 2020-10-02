@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import "./menu.css";
-import Modal from "react-bootstrap/Modal";
 
 import {
   getImageDir,
@@ -21,28 +20,11 @@ import {
 export default class Menu extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isModalOpen:
-        typeof window !== "undefined" ? !localStorage.isModalOpen : false,
-    };
   }
 
   render() {
-    setTimeout(
-      function () {
-        localStorage.isModalOpen = true;
-        this.setState({ isModalOpen: false });
-      }.bind(this),
-      2000
-    );
-
     return (
       <div class="row justify-content-center">
-        {/* <Modal show={this.state.isModalOpen}>
-          <Modal.Body>
-            <img src={getImageDir() + "logoPopup.jpg"} className="w-100"></img>
-          </Modal.Body>
-        </Modal> */}
         <div className="col-1 text-mobile text-md-left">
           <img src={getImageDir() + "logo.jpg"} className="logo"></img>
         </div>
