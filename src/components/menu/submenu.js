@@ -47,7 +47,7 @@ export default class Submenu extends React.Component {
       let dom = (
         <div
           className={
-            "col-4 col-sm-4 col-md-12 col-lg-12 " +
+            "col-4 col-sm-4 col-md-12 col-lg-12 pl-0 " +
             (selectedType == infoName ? "selected" : "")
           }
         >
@@ -64,7 +64,7 @@ export default class Submenu extends React.Component {
       let dom = (
         <div
           className={
-            "col-4 col-sm-4 col-md-12 col-lg-12 " +
+            "col-4 col-sm-4 col-md-12 col-lg-12 pl-0 " +
             (projectDetail.name == workName ? "selected" : "")
           }
         >

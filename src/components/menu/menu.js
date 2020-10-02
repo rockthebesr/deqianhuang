@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import "./menu.css";
 import Modal from "react-bootstrap/Modal";
+
 import {
   getImageDir,
   WORK,
@@ -37,12 +38,15 @@ export default class Menu extends React.Component {
 
     return (
       <div class="row justify-content-center">
-        <Modal show={this.state.isModalOpen}>
+        {/* <Modal show={this.state.isModalOpen}>
           <Modal.Body>
-            <img src={getImageDir() + "/logo.jpg"} className="w-100"></img>
+            <img src={getImageDir() + "logoPopup.jpg"} className="w-100"></img>
           </Modal.Body>
-        </Modal>
-        <div className="col-6 text-mobile text-md-left">
+        </Modal> */}
+        <div className="col-1 text-mobile text-md-left">
+          <img src={getImageDir() + "logo.jpg"} className="logo"></img>
+        </div>
+        <div className="col-5 text-mobile text-md-left">
           <Link to={"/" + INFO}>Oaid Studio</Link>
         </div>
         {this.createMenuButtons(this.props.location)}

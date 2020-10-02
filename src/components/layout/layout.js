@@ -22,7 +22,7 @@ export default class Layout extends React.Component {
         </Helmet>
         <Menu location={this.props.location}></Menu>
         <div class="row mt-5">
-          <div class="col-lg-4 left-side">
+          <div class="col-lg-3 offset-1 left-side text-mobile text-md-left">
             <Submenu location={this.props.location}></Submenu>
           </div>
           <div className="col-lg-8 right-side">{this.props.children}</div>

@@ -1,8 +1,6 @@
 .selected a {
-  /* color: black !important; */
   text-decoration: underline;
 }
-
 
 .modal-content {
   border: none;
@@ -24,4 +22,22 @@
 }
 .modal-backdrop.show {
   opacity: 0;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  margin-top: -10px;
+  margin-left: 75%;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    margin-top: -5px;
+    margin-left: 50%;
+  }
 }
