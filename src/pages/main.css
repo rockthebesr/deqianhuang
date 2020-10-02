@@ -1,6 +1,6 @@
 body {
   font-family: "Helvetica";
-  font-size: 12pt;
+  font-size: 10pt;
   text-transform: uppercase;
   margin-top: 5%;
 }
@@ -9,6 +9,7 @@ body a {
   color: black;
   font-weight: bold;
   line-height: 25pt;
+  font-size: 10pt;
 }
 
 @media (max-width: 768px) {
@@ -18,9 +19,6 @@ body a {
     line-height: 5px;
   }
 
-  body {
-    font-size: 10pt;
-  }
 }
 
 body a:hover {
