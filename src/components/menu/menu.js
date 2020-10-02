@@ -26,7 +26,9 @@ export default class Menu extends React.Component {
     return (
       <div class="row justify-content-center">
         <div className="col-1 text-mobile text-md-left">
-          <img src={getImageDir() + "logo.jpg"} className="logo"></img>
+          <Link to={"/" + INFO}>
+            <img src={getImageDir() + "logo.jpg"} className="logo"></img>
+          </Link>
         </div>
         <div className="col-5 text-mobile text-md-left">
           <Link to={"/" + INFO}>Oaid Studio</Link>
