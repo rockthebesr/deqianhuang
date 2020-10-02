@@ -8,6 +8,6 @@ import workYaml from "../../content/work.yaml";
 
 //{ location }
 export default function Home({ location }) {
-  navigate(computeWorkUrl(workYaml[0].name));
+  typeof window !== 'undefined' && navigate(computeWorkUrl(workYaml[0].name));
   return "";
 }
