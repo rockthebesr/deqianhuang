@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{FJi0:function(n,t,o){"use strict";o.r(t),o.d(t,"default",(function(){return i}));o("q1tI"),o("VIvZ"),o("q4sD"),o("43g+"),o("MBqG"),o("8k0H");function i(n){n.location;return""}}}]);
+//# sourceMappingURL=component---src-pages-news-js-4cef3ab0aeddf10087c3.js.map
