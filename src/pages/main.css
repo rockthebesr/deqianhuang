@@ -30,12 +30,16 @@ body a:hover {
 
 .right-side {
   overflow-y: auto;
+  overflow: visible;
   max-height: 900px;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
   .right-side {
     overflow-y: auto;
+    overflow: visible;
+    margin-top: 1rem;
     max-height: 600px;
   }
 }

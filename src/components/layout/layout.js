@@ -49,10 +49,10 @@ export default class Layout extends React.Component {
               }
             >
               <div class="row">
-              <Submenu location={this.props.location}></Submenu>
+                <Submenu location={this.props.location}></Submenu>
               </div>
             </div>
-            <div className="col-md-8 right-side mt-2">
+            <div className="col-md-8 right-side">
               {this.props.children}
             </div>
           </div>

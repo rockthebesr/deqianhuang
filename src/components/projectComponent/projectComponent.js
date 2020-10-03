@@ -10,7 +10,7 @@ export default function ProjectComponent(props) {
   let projectDetail = find(workYaml, { name: name });
   if (projectDetail) {
     return (
-      <div>
+      <div class="projectComponent">
         <div className="float-right shortDescription mb-2">{projectDetail.shortDescription}</div>
         <ImageAlbum
           imagePrefix={name}
