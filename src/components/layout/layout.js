@@ -4,7 +4,7 @@ import Submenu from "../menu/submenu";
 import { Helmet } from "react-helmet";
 import Modal from "react-bootstrap/Modal";
 import { getImageDir } from "../../util/util";
-import { isMobileOnly } from "react-device-detect";
+import { isMobile } from "react-device-detect";
 import metaYaml from "../../../content/meta.yaml";
 import "./layout.css";
 
@@ -46,7 +46,7 @@ export default class Layout extends React.Component {
             <div
               class={
                 "col-11 col-md-3 offset-1 left-side text-mobile text-md-left pb-3 " +
-                (isMobileOnly ? "d-flex" : "")
+                (isMobile ? "d-flex" : "")
               }
             >
               {/* <div class="row"> */}
