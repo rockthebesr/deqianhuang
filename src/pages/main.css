@@ -2,7 +2,7 @@ body {
   font-family: "Helvetica";
   font-size: 10pt;
   text-transform: uppercase;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 body a {
@@ -19,6 +19,7 @@ body a {
   }
 
   body {
+    margin-top: 4%;
     font-size: 9pt;
   }
 }

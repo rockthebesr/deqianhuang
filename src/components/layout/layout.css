@@ -23,3 +23,12 @@
 .left-side {
   padding-left: 30px;
 }
+ .bottomPart {
+     margin-top: 5rem;
+ }
+
+ @media (max-width: 768px) {
+    .bottomPart {
+        margin-top: 1rem;
+    }
+  }

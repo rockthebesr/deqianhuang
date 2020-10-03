@@ -42,7 +42,7 @@ export default class Layout extends React.Component {
             <title>{metaYaml.name}</title>
           </Helmet>
           <Menu location={this.props.location}></Menu>
-          <div class="row mt-5">
+          <div class="row bottomPart">
             <div
               class={
                 "col-10 col-md-3 offset-1 left-side text-mobile text-md-left pb-3"
