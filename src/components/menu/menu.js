@@ -32,12 +32,12 @@ export default class Menu extends React.Component {
         <div className="col-6 text-mobile text-md-left">
           <div className="row">
             <div className="col-2 text-mobile text-md-left">
-              <Link to={"/" + INFO}>
+              <Link to={"/" + INFO + "/?" + PROFILE}>
                 <img src={getImageDir() + "logo.jpg"} className="logo"></img>
               </Link>
             </div>
             <div className="col-10 text-mobile text-md-left">
-              <Link to={"/" + INFO} className="studioName d-flex">
+              <Link to={"/" + INFO + "/?" + PROFILE} className="studioName d-flex">
                 <div>{firstName}</div>
                 <div> | </div>
                 <div className="chineseStudioName">{lastName}</div>

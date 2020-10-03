@@ -13,7 +13,7 @@ export default class ImageAlbum extends React.Component {
 
     do {
       elements[0].classList.remove("active");
-    } while (elements.length != 0);
+    } while (elements.length > 0);
     elements = document.getElementsByClassName("carousel-item");
     elements[0].classList.add("active");
   }
