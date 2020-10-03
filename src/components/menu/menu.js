@@ -24,6 +24,9 @@ export default class Menu extends React.Component {
   }
 
   render() {
+    let firstName = metaYaml.name.split(" | ")[0];
+
+    let lastName = metaYaml.name.split(" | ")[1];
     return (
       <div class="row justify-content-center">
         <div className="col-6 text-mobile text-md-left">
@@ -34,8 +37,10 @@ export default class Menu extends React.Component {
               </Link>
             </div>
             <div className="col-10 text-mobile text-md-left">
-              <Link to={"/" + INFO} className="studioName">
-                {metaYaml.name}
+              <Link to={"/" + INFO} className="studioName d-flex">
+                <div>{firstName}</div>
+                <div> | </div>
+                <div className="chineseStudioName">{lastName}</div>
               </Link>
             </div>
           </div>
