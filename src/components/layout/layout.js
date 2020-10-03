@@ -41,7 +41,7 @@ export default class Layout extends React.Component {
           </Helmet>
           <Menu location={this.props.location}></Menu>
           <div class="row mt-3">
-            <div class="col-12 col-md-3 offset-1 left-side text-mobile text-md-left pb-3">
+            <div class="col-11 col-md-3 offset-1 left-side text-mobile text-md-left pb-3">
               <div class="row">
                 <Submenu location={this.props.location}></Submenu>
               </div>
