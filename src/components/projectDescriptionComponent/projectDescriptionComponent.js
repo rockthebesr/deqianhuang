@@ -35,7 +35,7 @@ export default class ProjectDescriptionComponent extends React.Component {
           </div>
           {this.state.isToggleOn && (
             <div className="projectDescriptionText col-12 mt-2">
-              return <LineText text={projectDescrption}></LineText>;
+              <LineText text={projectDescrption}></LineText>;
             </div>
           )}
         </div>
