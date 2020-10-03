@@ -3,34 +3,52 @@ import Carousel from "react-bootstrap/Carousel";
 import "./imageAlbum.css";
 import { getImageDir } from "../../util/util";
 
-export default function ImageAlbum(props) {
-  let imagePaths = [];
-  for (let i = 1; i <= props.numberOfImages; i++) {
-    imagePaths.push(getImageDir() + props.imagePrefix + "-" + i + ".jpg");
+export default class ImageAlbum extends React.Component {
+  constructor(props) {
+    super(props);
   }
 
-  let imageAlbum = (
-    <div className="imageAlbum" onContextMenu={(e) => e.preventDefault()}>
-      <Carousel
-        controls={true}
-        interval={null}
-        nextIcon={<span className="w-50" />}
-        prevIcon={<span className="w-50" />}
-        slide={false}
-        indicators={false}
-      >
-        {imagePaths.map((image) => (
-          <Carousel.Item>
-            <img
-              className="d-block w-100 img-responsive"
-              src={image}
-              alt="info"
-            />
-          </Carousel.Item>
-        ))}
-      </Carousel>
-    </div>
-  );
+  componentDidUpdate() {
+    let elements = document.getElementsByClassName("carousel-item active");
 
-  return imageAlbum;
+    do {
+      elements[0].classList.remove("active");
+    } while (elements.length != 0);
+    elements = document.getElementsByClassName("carousel-item");
+    elements[0].classList.add("active");
+  }
+
+  render() {
+    let imagePaths = [];
+    for (let i = 1; i <= this.props.numberOfImages; i++) {
+      imagePaths.push(
+        getImageDir() + this.props.imagePrefix + "-" + i + ".jpg"
+      );
+    }
+
+    let imageAlbum = (
+      <div className="imageAlbum" onContextMenu={(e) => e.preventDefault()}>
+        <Carousel
+          controls={true}
+          interval={null}
+          nextIcon={<span className="w-50" />}
+          prevIcon={<span className="w-50" />}
+          slide={false}
+          indicators={false}
+        >
+          {imagePaths.map((image) => (
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-responsive"
+                src={image}
+                alt="info"
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
+    );
+
+    return imageAlbum;
+  }
 }

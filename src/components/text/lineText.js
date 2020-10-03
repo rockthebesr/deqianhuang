@@ -7,7 +7,11 @@ export default function LineText(props) {
         return (
           <React.Fragment>
             {i}
-            <br />
+            {i === "" && (
+              <React.Fragment>
+                <br /> <br />
+              </React.Fragment>
+            )}
           </React.Fragment>
         );
       })}
