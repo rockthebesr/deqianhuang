@@ -45,13 +45,12 @@ export default class Layout extends React.Component {
           <div class="row mt-3">
             <div
               class={
-                "col-11 col-md-3 offset-1 left-side text-mobile text-md-left pb-3 " +
-                (isMobile ? "d-flex" : "")
+                "col-10 col-md-3 offset-1 left-side text-mobile text-md-left pb-3"
               }
             >
-              {/* <div class="row"> */}
+              <div class="row">
               <Submenu location={this.props.location}></Submenu>
-              {/* </div> */}
+              </div>
             </div>
             <div className="col-md-8 right-side mt-2">
               {this.props.children}

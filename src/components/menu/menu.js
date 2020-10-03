@@ -26,16 +26,21 @@ export default class Menu extends React.Component {
   render() {
     return (
       <div class="row justify-content-center">
-        <div className="col-1 text-mobile text-md-left">
-          <Link to={"/" + INFO}>
-            <img src={getImageDir() + "logo.jpg"} className="logo"></img>
-          </Link>
+        <div className="col-6 text-mobile text-md-left">
+          <div className="row">
+            <div className="col-2 text-mobile text-md-left">
+              <Link to={"/" + INFO}>
+                <img src={getImageDir() + "logo.jpg"} className="logo"></img>
+              </Link>
+            </div>
+            <div className="col-10 text-mobile text-md-left">
+              <Link to={"/" + INFO} className="studioName">
+                {metaYaml.name}
+              </Link>
+            </div>
+          </div>
         </div>
-        <div className="col-5 text-mobile text-md-left">
-          <Link to={"/" + INFO} className="studioName">
-            {metaYaml.name}
-          </Link>
-        </div>
+
         {this.createMenuButtons(this.props.location)}
       </div>
     );
