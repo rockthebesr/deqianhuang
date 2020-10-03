@@ -1,6 +1,6 @@
 ---
 - name: project1
-  title: Doggies
+  title: Tree House Module
   shortDescription: "Labrador | United States | 2020 "
   descrption: |
     Well this is just an example of a project descrption. Well this is just an example of a project descrption.
@@ -10,7 +10,7 @@
     
     Well this is just an example of a project descrption. Well this is just an example of a project descrption. Well this is just an example of a project descrption.
     Well this is just an example of a project descrption. Well this is just an example of a project descrption. Well this is just an example of a project descrption.
-  numberOfImages: 2
+  numberOfImages: 3
 - name: project2
   title: Kitties
   shortDescription: cats | canada | 2020
