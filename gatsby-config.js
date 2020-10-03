@@ -8,7 +8,7 @@ const path = require(`path`);
 
 module.exports = {
   /* Your site config here */
-  pathPrefix: "/",
+  pathPrefix: "/deqianhuang",
   plugins: [
     `gatsby-plugin-lodash`,
     `gatsby-plugin-react-helmet`,

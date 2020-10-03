@@ -1,6 +1,6 @@
 ---
 - name: project1
-  title: Project DOG
+  title: Doggies
   shortDescription: "Labrador | United States | 2020 "
   descrption: |
     Well this is just an example of a project descrption. Well this is just an example of a project descrption.
@@ -12,7 +12,7 @@
     Well this is just an example of a project descrption. Well this is just an example of a project descrption. Well this is just an example of a project descrption.
   numberOfImages: 2
 - name: project2
-  title: Project CAT
+  title: Kitties
   shortDescription: cats | canada | 2020
   descrption: |
     Well this is just an example of a project descrption. Well this is just an example of a project descrption.

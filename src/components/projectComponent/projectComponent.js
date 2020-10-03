@@ -11,7 +11,7 @@ export default function ProjectComponent(props) {
   if (projectDetail) {
     return (
       <div>
-        <div className="float-right shortDescription">{projectDetail.shortDescription}</div>
+        <div className="float-right shortDescription mb-2">{projectDetail.shortDescription}</div>
         <ImageAlbum
           imagePrefix={name}
           numberOfImages={projectDetail.numberOfImages}

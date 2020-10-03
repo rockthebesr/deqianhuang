@@ -23,24 +23,29 @@ export default class Layout extends React.Component {
     );
 
     return (
-      <div class="container">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>OAID STUDIO | 一德</title>
-        </Helmet>
+      <React.Fragment>
         <Modal show={this.state.isModalOpen}>
           <Modal.Body>
             <img src={getImageDir() + "logoPopup.jpg"} className="w-100"></img>
           </Modal.Body>
-        </Modal>
-        <Menu location={this.props.location}></Menu>
-        <div class="row mt-5">
-          <div class="col-lg-3 offset-1 left-side text-mobile text-md-left">
-            <Submenu location={this.props.location}></Submenu>
+        </Modal>{" "}
+        <div class="container">
+          <Helmet>
+            <meta charSet="utf-8" />
+            <title>OAID STUDIO | 一德</title>
+          </Helmet>
+
+          <Menu location={this.props.location}></Menu>
+          <div class="row mt-3">
+            <div class="col-12 col-md-3 offset-1 left-side text-mobile text-md-left pb-3">
+              <div class="row">
+                <Submenu location={this.props.location}></Submenu>
+              </div>
+            </div>
+            <div className="col-md-8 right-side">{this.props.children}</div>
           </div>
-          <div className="col-lg-8 right-side">{this.props.children}</div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
