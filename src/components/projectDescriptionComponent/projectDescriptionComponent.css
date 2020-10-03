@@ -19,3 +19,12 @@
   overflow-y: auto;
   font-family: "Helvetica";
 }
+
+@media (max-width: 768px) {
+  .projectDescriptionText {
+    max-height: 300px;
+    font-size: 8pt;
+    overflow-y: auto;
+    font-family: "Helvetica";
+  }
+}
