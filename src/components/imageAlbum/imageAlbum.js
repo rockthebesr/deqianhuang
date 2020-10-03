@@ -24,7 +24,6 @@ export default function ImageAlbum(props) {
             <img
               className="d-block w-100 img-responsive"
               src={image}
-              loading="lazy"
               alt="info"
             />
           </Carousel.Item>

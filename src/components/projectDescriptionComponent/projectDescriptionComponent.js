@@ -1,5 +1,6 @@
 import React from "react";
 import "./projectDescriptionComponent.css";
+import LineText from "../text/lineText";
 
 export default class ProjectDescriptionComponent extends React.Component {
   constructor(props) {
@@ -34,7 +35,7 @@ export default class ProjectDescriptionComponent extends React.Component {
           </div>
           {this.state.isToggleOn && (
             <div className="projectDescriptionText col-12 mt-2">
-              {projectDescrption}
+              return <LineText text={projectDescrption}></LineText>;
             </div>
           )}
         </div>

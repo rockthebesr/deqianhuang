@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import profileYaml from "../../content/profile.yaml";
 import contactYaml from "../../content/contact.yaml";
 import { returnInfoPageTypeIfOnInfoPage, CONTACT, PROFILE } from "../util/util";
+import LineText from "../components/text/lineText";
 
 export default function Info({ location }) {
   let infoType = returnInfoPageTypeIfOnInfoPage(location);
@@ -14,16 +15,5 @@ export default function Info({ location }) {
     renderedText = profileYaml.profile;
   }
   console.log(renderedText);
-  return (
-    <React.Fragment>
-      {renderedText.split("\n").map((i, key) => {
-        return (
-          <React.Fragment>
-            {i}
-            <br />
-          </React.Fragment>
-        );
-      })}
-    </React.Fragment>
-  );
+  return <LineText text={renderedText}></LineText>;
 }
