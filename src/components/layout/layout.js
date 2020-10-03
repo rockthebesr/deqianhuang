@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import Modal from "react-bootstrap/Modal";
 import { getImageDir } from "../../util/util";
 import { isMobileOnly } from "react-device-detect";
+import metaYaml from "../../../content/meta.yaml";
 import "./layout.css";
 
 export default class Layout extends React.Component {
@@ -38,16 +39,23 @@ export default class Layout extends React.Component {
         <div class="container">
           <Helmet>
             <meta charSet="utf-8" />
-            <title>OAID STUDIO | 一德</title>
+            <title>{metaYaml.name}</title>
           </Helmet>
           <Menu location={this.props.location}></Menu>
           <div class="row mt-3">
-            <div class={"col-11 col-md-3 offset-1 left-side text-mobile text-md-left pb-3 " + (isMobileOnly? "d-flex":"")}>
+            <div
+              class={
+                "col-11 col-md-3 offset-1 left-side text-mobile text-md-left pb-3 " +
+                (isMobileOnly ? "d-flex" : "")
+              }
+            >
               {/* <div class="row"> */}
-                <Submenu location={this.props.location}></Submenu>
+              <Submenu location={this.props.location}></Submenu>
               {/* </div> */}
             </div>
-            <div className="col-md-8 right-side mt-2">{this.props.children}</div>
+            <div className="col-md-8 right-side mt-2">
+              {this.props.children}
+            </div>
           </div>
         </div>
       </React.Fragment>

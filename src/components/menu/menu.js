@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import "./menu.css";
+import metaYaml from "../../../content/meta.yaml";
 
 import {
   getImageDir,
@@ -31,7 +32,9 @@ export default class Menu extends React.Component {
           </Link>
         </div>
         <div className="col-5 text-mobile text-md-left">
-          <Link to={"/" + INFO} className="studioName">Oaid Studio | 一德</Link>
+          <Link to={"/" + INFO} className="studioName">
+            {metaYaml.name}
+          </Link>
         </div>
         {this.createMenuButtons(this.props.location)}
       </div>
