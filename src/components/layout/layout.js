@@ -24,17 +24,21 @@ export default class Layout extends React.Component {
 
     return (
       <React.Fragment>
-        <Modal show={this.state.isModalOpen}>
-          <Modal.Body>
-            <img src={getImageDir() + "logoPopup.jpg"} className="w-100"></img>
-          </Modal.Body>
-        </Modal>{" "}
+        {this.state.isModalOpen && (
+          <Modal>
+            <Modal.Body>
+              <img
+                src={getImageDir() + "logoPopup.jpg"}
+                className="w-100"
+              ></img>
+            </Modal.Body>
+          </Modal>
+        )}
         <div class="container">
           <Helmet>
             <meta charSet="utf-8" />
             <title>OAID STUDIO | 一德</title>
           </Helmet>
-
           <Menu location={this.props.location}></Menu>
           <div class="row mt-3">
             <div class="col-12 col-md-3 offset-1 left-side text-mobile text-md-left pb-3">
