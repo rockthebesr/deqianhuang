@@ -26,8 +26,7 @@ export default class Layout extends React.Component {
       <div class="container">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>OAID Studio | 一德</title>
-          <link rel="canonical" href="http://mysite.com/example" />
+          <title>OAID STUDIO | 一德</title>
         </Helmet>
         <Modal show={this.state.isModalOpen}>
           <Modal.Body>

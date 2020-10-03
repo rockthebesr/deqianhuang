@@ -31,7 +31,7 @@ export default class Menu extends React.Component {
           </Link>
         </div>
         <div className="col-5 text-mobile text-md-left">
-          <Link to={"/" + INFO}>Oaid Studio</Link>
+          <Link to={"/" + INFO} className="studioName">Oaid Studio | 一德</Link>
         </div>
         {this.createMenuButtons(this.props.location)}
       </div>

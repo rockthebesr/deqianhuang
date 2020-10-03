@@ -2,7 +2,6 @@
   text-decoration: underline;
 }
 
-
 .logo {
   height: 40px;
   width: 40px;
@@ -18,5 +17,15 @@
     object-fit: cover;
     margin-top: -5px;
     margin-left: 50%;
+  }
+}
+
+.studioName {
+  font-size: 16pt;
+}
+
+@media (max-width: 768px) {
+  .studioName {
+    font-size: 10pt;
   }
 }
