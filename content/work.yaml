@@ -12,8 +12,11 @@
     Well this is just an example of a project descrption. Well this is just an example of a project descrption. Well this is just an example of a project descrption.
   numberOfImages: 3
 - name: project2
-  title: Kitties
-  shortDescription: cats | canada | 2020
+  title: Piscina Mirabilis Museum
+  shortDescription: Piscina Mirabilis Museum | Bacoli | Italy | Culture | Competition | 2020
   descrption: |
-    Well this is just an example of a project descrption. Well this is just an example of a project descrption.
-  numberOfImages: 2
+    We reconceive the Piscina Mirabilis as a place for the community, in which customs surrounding water are given a new space of appearance.
+    Where once water flowed from Piscina Mirabilis into the town of Bacoli, now, in reverse, the town flows into the reservoir.
+    The reservoir is adapted to exhibit artifacts of boat building industry both historical and contemporary, which can be traced from the Roman fleet in Miseno to a contemporary shipyard on the Sorrento coast.
+    
+  numberOfImages: 7
