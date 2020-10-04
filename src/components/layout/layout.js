@@ -45,7 +45,7 @@ export default class Layout extends React.Component {
           <div class="row bottomPart">
             <div
               class={
-                "col-10 col-md-3 offset-1 left-side text-mobile text-md-left pb-3"
+                "col-12 col-md-3 offset-1 left-side text-mobile text-md-left pb-3"
               }
             >
               <div class="row">
