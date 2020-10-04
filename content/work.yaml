@@ -1,16 +1,15 @@
 ---
 - name: project1
-  title: Tree House Module
-  shortDescription: "Labrador | United States | 2020 "
+  title: Shennong Tourist Center
+  shortDescription: Shennong Tourist Center | Hubei | China | Culture | Competition 1st prize | 2020
   descrption: |
-    Well this is just an example of a project descrption. Well this is just an example of a project descrption.
-    Well this is just an example of a project descrption. Well this is just an example of a project descrption. Well this is just an example of a project descrption.
-    Well this is just an example of a project descrption. Well this is just an example of a project descrption. Well this is just an example of a project descrption.
+    OAID’s proposal focuses on adapting traditional Chinese wood tectonics to contemporary programs while seeking a nuanced balance between the old and new. 
+    The proposal also delves into the cultural background of Shennongjia Region, featuring on local elements such as wood scaffolding, bull horns, and upturned eaves.
+    The façade consists of a series of wood panels. The semi-transparent panels not only emphasis on the wood structure, but also blur the boundary between the interior and the exterior, filtering the outdoor light.
 
     
-    Well this is just an example of a project descrption. Well this is just an example of a project descrption. Well this is just an example of a project descrption.
-    Well this is just an example of a project descrption. Well this is just an example of a project descrption. Well this is just an example of a project descrption.
-  numberOfImages: 3
+
+  numberOfImages: 9
 - name: project2
   title: Piscina Mirabilis Museum
   shortDescription: Piscina Mirabilis Museum | Bacoli | Italy | Culture | Competition | 2020
@@ -46,7 +45,7 @@
     The main interest is to raise food awareness, challenge the norms of mass food production, and celebrate locally grown healthy food.
    
     
-  numberOfImages: 10
+  numberOfImages: 8
 - name: project5
   title: Coastal Palimpsest
   shortDescription: Avian Center | Don Edwards National Park | USA | Public | Academic | 2018
