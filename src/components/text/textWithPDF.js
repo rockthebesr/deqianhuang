@@ -21,7 +21,7 @@ export default function TextWithPDF(props) {
   if (profile.filename) {
     profilePDF = (
       <a
-        class="resume col-1 offset-8 readMoreButton "
+        class="resume col-auto ml-auto readMoreButton "
         href={getPDFDir() + profile.filename}
         target="_blank"
       >
@@ -31,10 +31,10 @@ export default function TextWithPDF(props) {
   }
 
   return (
-    <div className="textSection mb-4">
-      {profileName}
-      {profileText}
-      {profilePDF}
+    <div className="textSection mb-4 row">
+      <div className="col-12">{profileName}</div>
+      <div className="col-12">{profileText}</div>
+      <div className="d-flex w-100">{profilePDF}</div>
     </div>
   );
 }

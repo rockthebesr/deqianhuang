@@ -12,7 +12,7 @@ export default function TextWithLink(props) {
   if (profile.link) {
     profileLink = (
       <a
-        class="resume col-1 offset-8 readMoreButton "
+        class="resume col-auto ml-auto readMoreButton "
         href={"http://" + profile.link}
         target="_blank"
       >
@@ -22,9 +22,9 @@ export default function TextWithLink(props) {
   }
 
   return (
-    <div className="textSection mb-4">
-      {profileText}
-      {profileLink}
+    <div className="textSection mb-4 row">
+      <div className="col-12">{profileText}</div>
+      <div className="d-flex w-100">{profileLink}</div>
     </div>
   );
 }

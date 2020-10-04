@@ -32,7 +32,7 @@ export default class Menu extends React.Component {
 
     let lastName = metaYaml.name.split(" | ")[1];
     return (
-      <div class="row justify-content-center">
+      <div class="row justify-content-between">
         <div className="col-6 text-mobile text-md-left">
           <div className="row">
             <div className="col-2 text-mobile text-md-left">
@@ -64,7 +64,7 @@ export default class Menu extends React.Component {
       return (
         <div
           className={
-            "col-2 text-mobile text-md-right " + (selected ? "selected" : "")
+            "col-auto text-mobile text-md-right topMenuButton " + (selected ? "selected" : "")
           }
         >
           <Link to={menuName.to}>{menuName.name}</Link>

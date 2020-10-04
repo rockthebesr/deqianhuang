@@ -40,6 +40,8 @@ export default class Layout extends React.Component {
           <Helmet>
             <meta charSet="utf-8" />
             <title>{metaYaml.name}</title>
+            <meta name="description" content={metaYaml.description} />
+            <meta name="keywords" content="architecture, studio, art, landscape, design, building, project" />
           </Helmet>
           <Menu location={this.props.location}></Menu>
           <div class="row bottomPart">
@@ -48,13 +50,11 @@ export default class Layout extends React.Component {
                 "col-12 col-md-3 offset-1 left-side text-mobile text-md-left pb-3"
               }
             >
-              <div class="row justify-content-center">
+              <div class="row justify-content-around">
                 <Submenu location={this.props.location}></Submenu>
               </div>
             </div>
-            <div className="col-md-8 right-side">
-              {this.props.children}
-            </div>
+            <div className="col-md-8 right-side">{this.props.children}</div>
           </div>
         </div>
       </React.Fragment>

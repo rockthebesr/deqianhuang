@@ -18,5 +18,17 @@ module.exports = {
         component: require.resolve(`./src/components/layout/layout`),
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `OAID ATELIER | 一德`,
+        short_name: `OAID STUDIO`,
+        start_url: `/`,
+        background_color: `white`,
+        theme_color: `black`,
+        display: `standalone`,
+        icon:  `src/images/icon.png`
+      },
+    },
   ],
 };
