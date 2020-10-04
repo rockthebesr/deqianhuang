@@ -27,4 +27,14 @@
     overflow-y: auto;
     font-family: "Helvetica";
   }
+
+  .readMoreButton {
+    border: none;
+    background-color: white;
+    color: #87888a;
+    font-weight: bold;
+    font-family: "Helvetica";
+    cursor: pointer;
+    font-size: 6pt;
+  }
 }

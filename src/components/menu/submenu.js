@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import workYaml from "../../../content/work.yaml";
+import newsYaml from "../../../content/news.yaml";
 import { getQueryVariable } from "../../util/util";
 import "./menu.css";
 import Modal from "react-bootstrap/Modal";
@@ -18,8 +19,9 @@ import {
   isOnInfoPage,
   returnInfoPageTypeIfOnInfoPage,
   returnWorkNameIfOnWorkPage,
-  returnNewsNameIfOnNewsPage,
+  returnNewsYearIfOnNewsPage,
   computeInfoUrl,
+  computeNewsUrl,
 } from "../../util/util";
 
 export default class Submenu extends React.Component {
@@ -34,8 +36,8 @@ export default class Submenu extends React.Component {
       return this.renderInfoMenu(returnInfoPageTypeIfOnInfoPage(location));
     } else if (returnWorkNameIfOnWorkPage(location) != null) {
       return this.renderWorkMenu(returnWorkNameIfOnWorkPage(location));
-    } else if (returnNewsNameIfOnNewsPage(location) != null) {
-      return this.renderNewsMenu();
+    } else if (returnNewsYearIfOnNewsPage(location) != null) {
+      return this.renderNewsMenu(returnNewsYearIfOnNewsPage(location));
     }
 
     return "";
@@ -75,7 +77,19 @@ export default class Submenu extends React.Component {
     });
   }
 
-  renderNewsMenu(newsName) {
-    return "";
+  renderNewsMenu(newsYear) {
+    return newsYaml.map((newsDetail) => {
+      let to = computeNewsUrl(newsDetail.year);
+      return (
+        <div
+          className={
+            "col-md-12 col-auto workMenuButton " +
+            (newsDetail.year == newsYear ? "selected" : "")
+          }
+        >
+          <Link to={to}>{newsDetail.year}</Link>
+        </div>
+      );
+    });
   }
 }

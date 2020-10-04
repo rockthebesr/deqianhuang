@@ -1,0 +1,17 @@
+---
+- year: 2020
+  news:
+  - text: |
+      well this is just an example of how you can add news in 2020. The link here is just gonna open up google.
+    link: www.google.com
+  - text: |
+       well this is just an example of how you can add news in 2020. The link here is just gonna open up google.
+    link: www.google.com
+- year: 2019
+  news:
+  - text: |
+       well this is just an example of how you can add news in 2019. The link here is just gonna open up google.
+    link: www.google.com
+  - text: |
+       well this is just an example of how you can add news in 2019. The link here is just gonna open up google.
+    link: www.google.com

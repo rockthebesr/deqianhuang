@@ -1,12 +1,21 @@
 import React from "react";
-import ProjectComponent from "../components/projectComponent/projectComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./main.css";
-import Menu from "../components/menu/menu";
-import Layout from "../components/layout/layout";
+import newsYaml from "../../content/news.yaml";
+import { find, toNumber } from "lodash";
+import { returnNewsYearIfOnNewsPage } from "../util/util";
+import TextWithLink from "../components/text/textWithLink";
 
-//{ location }
 export default function News({ location }) {
-  return "";
-}
+  console.log(newsYaml);
+  let year = returnNewsYearIfOnNewsPage(location);
+  let newsCollection = find(newsYaml, function (news) {
+    return news.year === toNumber(year);
+  });
+  if (!newsCollection) {
+    return "";
+  }
 
+  return newsCollection.news.map((newsDetail) => {
+    return <TextWithLink profile={newsDetail}></TextWithLink>;
+  });
+}

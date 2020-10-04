@@ -7,7 +7,7 @@ export const CONTACT = "contact";
 export const PROFILE = "profile";
 export const COLLABORATORS = "collaborators";
 export const NEWS = "news";
-export const NEWS_NAME = "newsname";
+export const YEAR = "year";
 
 export const IMAGE_DIR = "/";
 export const PDF_DIR = "/pdf/";
@@ -54,9 +54,9 @@ export function returnInfoPageTypeIfOnInfoPage(location) {
   }
 }
 
-export function returnNewsNameIfOnNewsPage(location) {
+export function returnNewsYearIfOnNewsPage(location) {
   if (location.pathname.indexOf(NEWS) >= 0) {
-    return getQueryVariable(location.search, NEWS_NAME) || "";
+    return getQueryVariable(location.search, YEAR) || "";
   } else {
     return null;
   }
@@ -67,4 +67,8 @@ export function computeWorkUrl(workname) {
 }
 export function computeInfoUrl(infoName) {
   return "/" + INFO + "/" + "?" + infoName;
+}
+
+export function computeNewsUrl(newsYear) {
+  return "/" + NEWS + "/" + "?" + YEAR + "=" + newsYear;
 }
