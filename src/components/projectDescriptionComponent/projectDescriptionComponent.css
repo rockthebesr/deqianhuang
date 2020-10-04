@@ -23,7 +23,7 @@
 @media (max-width: 768px) {
   .projectDescriptionText {
     max-height: 300px;
-    font-size: 8pt;
+    font-size: 6pt;
     overflow-y: auto;
     font-family: "Helvetica";
   }

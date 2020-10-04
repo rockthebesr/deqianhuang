@@ -1,9 +1,9 @@
 .imageAlbum .carousel-control-next {
-  width: 50% !important;
+  width: 70% !important;
 }
 
 .imageAlbum .carousel-control-prev {
-  width: 50% !important;
+  width: 30% !important;
 }
 
 .carousel .carousel-item img {

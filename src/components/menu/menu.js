@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import "./menu.css";
 import metaYaml from "../../../content/meta.yaml";
+import workYaml from "../../../content/work.yaml";
 
 import {
   getImageDir,
@@ -13,6 +14,7 @@ import {
   CONTACT,
   PROFILE,
   computeWorkUrl,
+  computeInfoUrl,
   returnInfoPageTypeIfOnInfoPage,
   returnWorkNameIfOnWorkPage,
   returnNewsNameIfOnNewsPage,
@@ -37,7 +39,10 @@ export default class Menu extends React.Component {
               </Link>
             </div>
             <div className="col-10 text-mobile text-md-left">
-              <Link to={"/" + INFO + "/?" + PROFILE} className="studioName d-flex">
+              <Link
+                to={"/" + INFO + "/?" + PROFILE}
+                className="studioName d-flex"
+              >
                 <div>{firstName}</div>
                 <div> | </div>
                 <div className="chineseStudioName">{lastName}</div>
@@ -52,16 +57,20 @@ export default class Menu extends React.Component {
   }
 
   createMenuButtons(location) {
-    let menuButtonNamesList = [INFO, WORK, NEWS];
+    let menuButtonNamesList = [
+      { name: INFO, to: computeInfoUrl(PROFILE) },
+      { name: WORK, to: computeWorkUrl(workYaml[0].name) },
+      { name: NEWS, to: '/' + NEWS + '/' },
+    ];
     let menuButtons = menuButtonNamesList.map((menuName) => {
-      let selected = location.pathname.indexOf(menuName) >= 0;
+      let selected = location.pathname.indexOf(menuName.name) >= 0;
       return (
         <div
           className={
             "col-2 text-mobile text-md-right " + (selected ? "selected" : "")
           }
         >
-          <Link to={"/" + menuName + "/"}>{menuName}</Link>
+          <Link to={menuName.to}>{menuName.name}</Link>
         </div>
       );
     });

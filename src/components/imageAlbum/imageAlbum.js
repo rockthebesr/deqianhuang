@@ -12,7 +12,9 @@ export default class ImageAlbum extends React.Component {
     let elements = document.getElementsByClassName("carousel-item active");
 
     do {
-      elements[0].classList.remove("active");
+      if (!!elements[0]) {
+        elements[0].classList.remove("active");
+      }
     } while (elements.length > 0);
     elements = document.getElementsByClassName("carousel-item");
     elements[0].classList.add("active");
@@ -31,8 +33,8 @@ export default class ImageAlbum extends React.Component {
         <Carousel
           controls={true}
           interval={null}
-          nextIcon={<span className="w-50" />}
-          prevIcon={<span className="w-50" />}
+          nextIcon={<span className="w-90" />}
+          prevIcon={<span className="w-10" />}
           slide={false}
           indicators={false}
         >

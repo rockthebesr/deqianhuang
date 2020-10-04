@@ -25,10 +25,10 @@
   white-space: pre;
 }
 
-.chineseStudioName {
+/* .chineseStudioName {
   font-size: 16pt;
   font-weight: bold;
-}
+} */
 
 @media (max-width: 768px) {
   .studioName {
@@ -37,8 +37,8 @@
     white-space: pre;
   }
 
-  .chineseStudioName {
+  /* .chineseStudioName {
     font-size: 9pt;
     font-weight: bold;
-  }
+  } */
 }

@@ -23,12 +23,16 @@
 .left-side {
   padding-left: 30px;
 }
- .bottomPart {
-     margin-top: 6rem;
- }
+.bottomPart {
+  margin-top: 6rem;
+}
 
- @media (max-width: 768px) {
-    .bottomPart {
-        margin-top: 1rem;
-    }
+@media (max-width: 768px) {
+  .bottomPart {
+    margin-top: 1rem;
   }
+
+  .left-side {
+    margin-left: 0% !important;
+  }
+}

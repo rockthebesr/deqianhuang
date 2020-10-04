@@ -1,6 +1,11 @@
 .shortDescription {
 }
 
+@media (max-width: 768px) {
+  .shortDescription {
+    font-size: 5pt;
+  }
+}
 .projectComponent {
   margin-top: -1.6rem;
 }
