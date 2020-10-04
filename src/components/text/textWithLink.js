@@ -13,7 +13,7 @@ export default function TextWithLink(props) {
     profileLink = (
       <a
         class="resume col-auto ml-auto readMoreButton "
-        href={"http://" + profile.link}
+        href={profile.link}
         target="_blank"
       >
         read more

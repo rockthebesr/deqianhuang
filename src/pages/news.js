@@ -11,7 +11,7 @@ export default function News({ location }) {
     return news.year === toNumber(year);
   });
 
-  if (!newsCollection) {
+  if (!newsCollection || !newsCollection.news) {
     return "";
   }
 

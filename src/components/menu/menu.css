@@ -16,7 +16,7 @@
     width: 20px;
     object-fit: cover;
     margin-top: -10px;
-    margin-left: 200%;
+    margin-left: 0;
   }
 }
 
@@ -42,7 +42,7 @@
   }
 
   .workMenuButton {
-    padding-right: 5px !important;
-    padding-left: 5px !important;
+    /* padding-right: 5px !important;
+    padding-left: 5px !important; */
   }
 }

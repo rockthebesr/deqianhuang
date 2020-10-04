@@ -50,7 +50,7 @@ export default class Layout extends React.Component {
                 "col-12 col-md-3 offset-1 left-side text-mobile text-md-left pb-3"
               }
             >
-              <div class="row justify-content-around">
+              <div class="row justify-content-between">
                 <Submenu location={this.props.location}></Submenu>
               </div>
             </div>
