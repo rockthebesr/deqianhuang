@@ -1,9 +1,9 @@
 ---
-- name: John Doe
+- name: Ran Huo
   text: |
-    This is an example collaborator. This is an example collaborator. This is an example collaborator. This is an example collaborator. This is an example collaborator. 
-  filename: dummy.pdf
-- name: Steve Jobs
+    Ran Huo holds a degree from Harvard GSD in Master of Architecture II. He worked for a various of international firms, including OMA/AMO,Fernando Menis Architects, and Vector Architects.
+  filename: 03_RANHUO.pdf
+- name: Xiaotang Tang
   text: |
-    This is another example collaborator hehe This is another example collaborator heheThis is another example collaborator heheThis is another example collaborator hehe
-  filename: dummy.pdf
+    Xiaotang holds a degree from Harvard GSD in Master of Architecture I. Over the years, she worked for Neri & Hu Design and Research Office, OMA Rotterdam, and VTN Architects.
+  filename: 04_XIAOTANG.pdf
