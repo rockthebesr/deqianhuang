@@ -34,6 +34,32 @@
    
     
   numberOfImages: 8
+  
+- name: CONSTRICTION
+  title: CONSTRICTION
+  shortDescription: CONSTRICTION | Beijing | China | Art Installation | 2014
+  descrption: |
+    Collaborator: Kuon He, Haoming Fu, Xin Wen
+    
+    The process of transform is far more fascinating than the outcome.
+    As an inherit of the past, every stage is also an inoculation of the future. As individual stage existing in various time / space and appearing alternatively, the coherence of transform is hard to observe.
+    So, we reproduce the various stages in one single time and space.
+     
+  numberOfImages: 3
+  
+- name: SOLIDIFIED DIVISION
+  title: SOLIDIFIED DIVISION
+  shortDescription: SOLIDIFIED DIVISION | Beijing | China | Art Installation | 2014
+  descrption: |
+    Collaborator: Kuon He, Haoming Fu, Xin Wen
+    
+    The aggregation of individual cells forms life. 
+    This process can be revealed in a much bigger and visible size by material of Acrylic panels.
+    What appears after a series of collaborative works, is a wonderful form of aggregation, formed just the way the life is.
+     
+  numberOfImages: 3
+  
+
 - name: project4
   title: Market Basket
   shortDescription: Living with Food | Somerville | USA | Residential | Academic | 2019
@@ -58,3 +84,34 @@
    
     
   numberOfImages: 3
+  
+- name: A Library EDUCATIONAL MACHINE
+  title: Library MACHINE
+  shortDescription: A Library EDUCATIONAL MACHINE | Boston | USA | Public | Academic | 2016
+  descrption: |
+    
+    This library is not just an archive of books, and I think books should never be the protagonist of a library.
+    I started the project with redefining library. My conclusion was that library con be regarded as a machine for self-education: inputting people and knowledge, then outpulling educated people.
+    In that case, this project is not a static object or form but a dynamic process or incident.      
+  numberOfImages: 3
+  
+- name: ISLAND AS FLOW
+  title: ISLAND AS FLOW
+  shortDescription: ISLAND AS FLOW | Boston | USA | Landscape | Academic | 2018
+  descrption: |
+    
+    
+    
+  numberOfImages: 1
+  
+- name: The Room
+  title: The Room
+  shortDescription: The Room 4'33" | Boston | USA | Public | Academic | 2016
+  descrption: |
+    
+    The project is about the interaction between architecture and the auditory sense of body. 
+    The concept is inspired by the experimental music work of John Cage 4' 33". 
+    While the music work is composed by 3 movements, the project is also consisted of three parts, each of which may bring different experiences to people who walk through them. 
+    
+  numberOfImages: 1
+  
