@@ -41,11 +41,12 @@ export default class Menu extends React.Component {
             <div className="col-10 text-mobile text-md-left">
               <Link
                 to={"/" + INFO + "/?" + PROFILE}
-                className="studioName d-flex"
+                className="studioName"
               >
-                <div>{firstName}</div>
+                {/* <div>{firstName}</div>
                 <div> | </div>
-                <div className="chineseStudioName">{lastName}</div>
+                <div className="chineseStudioName">{lastName}</div> */}
+                {metaYaml.name}
               </Link>
             </div>
           </div>
