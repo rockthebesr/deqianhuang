@@ -31,7 +31,7 @@ export default function TextWithPDF(props) {
   }
 
   return (
-    <div className="textSection mb-4 row">
+    <div className="row mb-4">
       <div className="col-12">{profileName}</div>
       <div className="col-12">{profileText}</div>
       <div className="d-flex w-100">{profilePDF}</div>

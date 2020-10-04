@@ -15,7 +15,12 @@ export default function News({ location }) {
     return "";
   }
 
-  return newsCollection.news.map((newsDetail) => {
-    return <TextWithLink profile={newsDetail}></TextWithLink>;
-  });
+  return (
+    <div className="row">
+      {newsCollection.news.map((newsDetail) => {
+        return <TextWithLink profile={newsDetail}></TextWithLink>;
+      })}
+    </div>
+  );
 }
+

@@ -22,7 +22,7 @@ export default function TextWithLink(props) {
   }
 
   return (
-    <div className="textSection mb-4 row">
+    <div className="row mb-4">
       <div className="col-12">{profileText}</div>
       <div className="d-flex w-100">{profileLink}</div>
     </div>

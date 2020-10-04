@@ -20,20 +20,21 @@ export default function Info({ location }) {
     renderedComponent = <LineText text={contactYaml.contact}></LineText>;
   } else if (infoType === PROFILE) {
     renderedComponent = (
-      <React.Fragment>
+      <div className="row">
         {profileYaml.map((profile) => {
           return <TextWithPDF profile={profile}></TextWithPDF>;
         })}
-      </React.Fragment>
+      </div>
     );
   } else if (infoType === COLLABORATORS) {
     renderedComponent = (
-      <React.Fragment>
+      <div className="row">
         {collaboratorsYaml.map((profile) => {
           return <TextWithPDF profile={profile}></TextWithPDF>;
         })}
-      </React.Fragment>
+      </div>
     );
   }
+  console.log(renderedComponent);
   return renderedComponent;
 }
