@@ -15,7 +15,7 @@ import TextWithPDF from "../components/text/textWithPDF";
 
 export default function Info({ location }) {
   let infoType = returnInfoPageTypeIfOnInfoPage(location);
-  let renderedComponent;
+  let renderedComponent = <div></div>;
   if (infoType === CONTACT) {
     renderedComponent = <LineText text={contactYaml.contact}></LineText>;
   } else if (infoType === PROFILE) {
