@@ -1,0 +1,9 @@
+---
+- name: John Doe
+  text: |
+    This is an example collaborator. This is an example collaborator. This is an example collaborator. This is an example collaborator. This is an example collaborator. 
+  filename: dummy.pdf
+- name: Steve Jobs
+  text: |
+    This is another example collaborator hehe This is another example collaborator heheThis is another example collaborator heheThis is another example collaborator hehe
+  filename: dummy.pdf

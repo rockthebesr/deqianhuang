@@ -13,6 +13,7 @@ import {
   INFO,
   CONTACT,
   PROFILE,
+  COLLABORATORS,
   computeWorkUrl,
   isOnInfoPage,
   returnInfoPageTypeIfOnInfoPage,
@@ -41,14 +42,13 @@ export default class Submenu extends React.Component {
   }
 
   renderInfoMenu(selectedType) {
-    let infoNames = [PROFILE, CONTACT];
+    let infoNames = [PROFILE, COLLABORATORS, CONTACT];
     return infoNames.map((infoName) => {
       let to = computeInfoUrl(infoName);
       let dom = (
         <div
           className={
-            "col-md-12 col-auto " +
-            (selectedType == infoName ? "selected" : "")
+            "col-md-12 col-auto " + (selectedType == infoName ? "selected" : "")
           }
         >
           <Link to={to}>{infoName}</Link>
@@ -64,7 +64,7 @@ export default class Submenu extends React.Component {
       let dom = (
         <div
           className={
-            "col-md-12 col-auto " +
+            "col-md-12 col-auto workMenuButton " +
             (projectDetail.name == workName ? "selected" : "")
           }
         >

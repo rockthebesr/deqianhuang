@@ -3,17 +3,37 @@ import Layout from "../components/layout/layout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import profileYaml from "../../content/profile.yaml";
 import contactYaml from "../../content/contact.yaml";
-import { returnInfoPageTypeIfOnInfoPage, CONTACT, PROFILE } from "../util/util";
+import collaboratorsYaml from "../../content/collaborators.yaml";
+import {
+  returnInfoPageTypeIfOnInfoPage,
+  CONTACT,
+  PROFILE,
+  COLLABORATORS,
+} from "../util/util";
 import LineText from "../components/text/lineText";
+import TextWithPDF from "../components/text/textWithPDF";
 
 export default function Info({ location }) {
   let infoType = returnInfoPageTypeIfOnInfoPage(location);
-  let renderedText = "";
+  let renderedComponent;
   if (infoType === CONTACT) {
-    renderedText = contactYaml.contact;
+    renderedComponent = <LineText text={contactYaml.contact}></LineText>;
   } else if (infoType === PROFILE) {
-    renderedText = profileYaml.profile;
+    renderedComponent = (
+      <React.Fragment>
+        {profileYaml.map((profile) => {
+          return <TextWithPDF profile={profile}></TextWithPDF>;
+        })}
+      </React.Fragment>
+    );
+  } else if (infoType === COLLABORATORS) {
+    renderedComponent = (
+      <React.Fragment>
+        {collaboratorsYaml.map((profile) => {
+          return <TextWithPDF profile={profile}></TextWithPDF>;
+        })}
+      </React.Fragment>
+    );
   }
-  console.log(renderedText);
-  return <LineText text={renderedText}></LineText>;
+  return renderedComponent;
 }

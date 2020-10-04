@@ -5,13 +5,19 @@ export const WORK_NAME = "workname";
 export const INFO = "info";
 export const CONTACT = "contact";
 export const PROFILE = "profile";
+export const COLLABORATORS = "collaborators";
 export const NEWS = "news";
 export const NEWS_NAME = "newsname";
 
 export const IMAGE_DIR = "/";
+export const PDF_DIR = "/pdf/";
 
 export function getImageDir() {
   return IMAGE_DIR;
+}
+
+export function getPDFDir() {
+  return PDF_DIR;
 }
 
 export function getQueryVariable(query, variable) {

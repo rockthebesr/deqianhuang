@@ -1,6 +1,10 @@
 import React from "react";
+import { isEmpty } from "lodash";
 
 export default function LineText(props) {
+  if (isEmpty(props.text)) {
+    return "";
+  }
   return (
     <React.Fragment>
       {props.text.split("\n").map((i, key) => {
