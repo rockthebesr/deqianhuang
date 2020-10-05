@@ -20,7 +20,7 @@ export default function Info({ location }) {
     renderedComponent = <LineText text={contactYaml.contact}></LineText>;
   } else if (infoType === PROFILE) {
     renderedComponent = (
-      <div className="row">
+      <div>
         {profileYaml.map((profile) => {
           return <TextWithPDF profile={profile}></TextWithPDF>;
         })}
@@ -28,7 +28,7 @@ export default function Info({ location }) {
     );
   } else if (infoType === COLLABORATORS) {
     renderedComponent = (
-      <div className="row">
+      <div>
         {collaboratorsYaml.map((profile) => {
           return <TextWithPDF profile={profile}></TextWithPDF>;
         })}
