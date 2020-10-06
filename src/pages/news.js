@@ -16,7 +16,7 @@ export default function News({ location }) {
   }
 
   return (
-    <div className="row">
+    <div className="">
       {newsCollection.news.map((newsDetail) => {
         return <TextWithLink profile={newsDetail}></TextWithLink>;
       })}
