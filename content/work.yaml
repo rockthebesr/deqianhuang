@@ -61,6 +61,20 @@
      
   numberOfImages: 3
   
+  - name: project5
+  title: Doing with Addis
+  shortDescription: Urban Design | Addis Ababa | Ethiopia | Education | Academic | 2021
+  descrption: |
+    Collaborator: Kyle Winston
+    
+    Doing with Addis means manufacturing-led urbanism that is incremental and decentralized: doing with the context, doing with the people, and doing with the resources at hand. 
+    The Ethiopian Textile Institute as urban catalyst for growth, not as a single building, but many occupying the existing site infrastructure; with new construction added just when needed to frame new spaces between the Institute and city. 
+    Design then as a framework, transforming existing adjacencies and interstitial spaces to reveal to new possibilities. And like the site itself, the working method was an exquisite corpse, doing with each other, many time zones apart.
+   
+   
+   
+    
+  numberOfImages: 9
 
 - name: project4
   title: Market Basket
