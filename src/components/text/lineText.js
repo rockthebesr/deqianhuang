@@ -7,18 +7,26 @@ export default function LineText(props) {
   }
   return (
     <React.Fragment>
-      {props.text.split("\n").map((i, key) => {
+      {/* {props.text.split("<br>").map((i, key) => {
         return (
           <React.Fragment>
-            {i}
+            <div dangerouslySetInnerHTML={createMarkup(i)}></div>
             {i === "" && (
               <React.Fragment>
-                <br /> <br />
+                <br />
               </React.Fragment>
             )}
           </React.Fragment>
         );
-      })}
+      })} */}
+
+          <React.Fragment>
+            <div dangerouslySetInnerHTML={createMarkup(props.text)}></div>
+          </React.Fragment>
     </React.Fragment>
   );
+}
+
+function createMarkup(strng) {
+  return {__html: strng};
 }

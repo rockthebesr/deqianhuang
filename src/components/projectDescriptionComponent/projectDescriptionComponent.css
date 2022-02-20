@@ -13,19 +13,27 @@
   text-decoration: none;
 }
 
-.projectDescriptionText {
+.projectDescriptionText, .projectDescriptionText a{
   max-height: 200px;
   font-size: 8pt;
   overflow-y: auto;
   font-family: "Helvetica";
 }
 
+.projectDescriptionText a{
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
-  .projectDescriptionText {
+  .projectDescriptionText, .projectDescriptionText a {
     max-height: 300px;
     font-size: 6pt;
     overflow-y: auto;
     font-family: "Helvetica";
+  }
+  
+  .projectDescriptionText a {
+    text-decoration: underline;
   }
 
   .readMoreButton {
