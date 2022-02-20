@@ -33,16 +33,10 @@ export default class Menu extends React.Component {
     let lastName = metaYaml.name.split(" | ")[1];
     return (
       <div class="row justify-content-between">
-        <div className="col-6 text-mobile text-md-left">
-          <div className="row">
-            <div className="col-2 text-mobile text-md-left">
-            </div>
-            <div className="col-10 text-mobile text-md-left">
+        <div className="col-auto offset-1 left-side text-mobile text-md-left">
               <Link to={"/" + INFO + "/?" + PROFILE} className="studioName">
                 {metaYaml.name}
               </Link>
-            </div>
-          </div>
         </div>
 
         {this.createMenuButtons(this.props.location)}
