@@ -7,15 +7,19 @@ export default function TextWithPDF(props) {
   let profileName = "";
   if (profile.name) {
     profileName = (
-      <React.Fragment>
+      <div className="profileName">
         <LineText text={profile.name}></LineText>
         <br />
-      </React.Fragment>
+      </div>
     );
   }
   let profileText = "";
   if (profile.text) {
-    profileText = <LineText text={profile.text}></LineText>;
+    profileText = (
+      <div className="profileText">
+        <LineText text={profile.text}></LineText>
+      </div>
+    );
   }
   let profilePDF = "";
   if (profile.filename) {

@@ -11,6 +11,14 @@ body a {
   font-size: 10pt;
 }
 
+.profileName {
+  font-weight: bold;
+}
+
+.profileText {
+  text-transform: initial !important;
+}
+
 @media (max-width: 768px) {
   body a {
     color: black;
