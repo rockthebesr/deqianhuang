@@ -17,7 +17,12 @@ export default function Info({ location }) {
   let infoType = returnInfoPageTypeIfOnInfoPage(location);
   let renderedComponent = <div></div>;
   if (infoType === CONTACT) {
-    renderedComponent = <LineText text={contactYaml.contact}></LineText>;
+    renderedComponent = 
+    (
+      <div className="profileText">
+        <LineText text={contactYaml.contact}></LineText>
+      </div>
+    );
   } else if (infoType === PROFILE) {
     renderedComponent = (
       <div>
