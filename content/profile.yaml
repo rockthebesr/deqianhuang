@@ -1,15 +1,14 @@
 ---
 - name: 
   text: |
-    Zhongdu is founded by De Qian Huang and Zeqi Liu in 2020.
-
+    
     De Qian Huang worked for Herzog de Meuron, Dorte Mandrup, Michael Maltzen, Zhongdu Engineering and Takenaka Engineering. 
 
     He studied at the University of California Berkeley and Harvard Graduate School of Design.  
   filename: 01_De Qian Huang.pdf
 - name: 
   text: |
-    Zeqi Liu worked at Studio Olafur Eliasson, SKA a/s and Hargreaves associates.
+    Zeqi Liu worked at Studio Olafur Eliasson, SLA a/s and Hargreaves associates.
 
     She holds a bachelor’s degree from Tsinghua university and a master degree from Harvard Graduate School of Design.
   filename: 02_Zeqi Liu.pdf
