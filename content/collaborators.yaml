@@ -1,9 +1,53 @@
 ---
-- name: Ran Huo
+- name: Daofei Huang
   text: |
-    Ran Huo holds a degree from Harvard GSD in Master of Architecture II. He worked for a various of international firms, including OMA/AMO,Fernando Menis Architects, and Vector Architects.
-  filename: 03_RANHUO.pdf
-- name: Xiaotang Tang
+    Founder of Zhongdu Engineering
+    Senior Structural Engineer
+
+- name: Niall Kirkwood
   text: |
-    Xiaotang holds a degree from Harvard GSD in Master of Architecture I. Over the years, she worked for Neri & Hu Design and Research Office, OMA Rotterdam, and VTN Architects.
-  filename: 04_XIAOTANG.pdf
+    Landscape Architecture Consultant
+    Tenured Professor of Landscape Architecture at Harvard University
+    Senior Life Member of the American Society of Landscape Architects
+    Director of Harvard University's Center for Technology and the Environment
+
+- name: Jiuxue Zhang
+  text: |
+    Architecture Consultant
+    Registered Class I Architect
+    Senior Engineer
+    Adjunct professor at Lanzhou Jiaotong University
+    
+- name: Mingyan Xu
+  text: |
+    Architecture Consultant
+    Registered Class I Architect
+    Senior Engineer
+    
+- name: Qijie Zhan
+  text: |
+    Professor-level senior engineer
+    Registered Class I Architect
+    Distinguished Research Fellow of Shenzhen Research Institute, City University of Hong Kong
+- name: Haibo Jiang
+  text: |
+    Engineering Consultant
+    Registered Class I Architect
+    Professor-level senior engineer
+- name: Hongyu Liao
+  text: |
+    Drainage Consultant
+    Senior engineer
+- name: Xu Gao
+  text: |
+    Chief cost engineer
+    Senior engineer
+    National Registered Cost Engineer
+- name: Lei Wang
+  text: |
+    BIM Engineer
+    Senior engineer
+    
+
+
+
