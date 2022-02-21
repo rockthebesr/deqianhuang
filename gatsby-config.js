@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `OAID ATELIER | 一德`,
-        short_name: `OAID STUDIO`,
+        name: `ZHONGDU | 中都`,
+        short_name: `ZHONGDU`,
         start_url: `/`,
         background_color: `white`,
         theme_color: `black`,
